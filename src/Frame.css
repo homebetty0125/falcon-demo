@@ -1,0 +1,177 @@
+* {
+    font-size: 1em;
+    color: #333;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* header */
+.header {
+    padding: 20px;
+    max-height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    max-height: 80px;
+}
+
+.header .search {
+    min-width: 40%;
+    margin-left: 20px;
+    border-radius: 60px;
+    border: 1px solid rgba(0,0,0,.4);
+    padding: 10px 20px;
+}
+
+.header .search input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+}
+
+/* content */
+.main {
+    border-top: 1px solid rgba(0, 0, 0, .4);
+    display: flex;
+    margin-bottom: 40px;
+}
+
+/* footer */
+.footer {
+    font-size: 0.85em;
+    width: 100%;
+    position: fixed;
+    border-top: 1px solid rgba(0, 0, 0, .4);
+    bottom: 0;
+    padding: 16px 20px;
+    display: flex;
+    background-color: #FFF;
+    z-index: 10;
+}
+
+.footer > * {
+    flex: 1;
+}
+
+.link-to a {
+    margin-right: 30px;
+}
+
+.link-to a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: right;
+}
+
+/* navbar */
+.nav-menu {
+    max-width: 300px;
+    width: 100%;
+    border-right: 1px solid rgba(0, 0, 0, .4);
+    padding: 40px 0;
+}
+
+.inner {
+    margin-top: 76px;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 10px 40px;
+    margin: 20px 0;
+    transition: all 0.2s linear;
+}
+
+.nav-menu a * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-menu a:hover * {
+    opacity: 0.85;
+}
+
+.nav-menu a.active * {
+    font-weight: bold;
+    color: blue;
+    opacity: 1;
+    transition: all 0.2s linear;
+}
+
+.nav-menu a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+.content-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.content-header > * {
+    flex: 1;
+}
+
+.content-header .title {
+    font-size: 1.6em;
+    margin: 0;
+}
+
+.content-header span {
+    text-align: right;
+    font-size: 0.85em;
+    opacity: 0.75;
+}
+
+/* List */
+.lists {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.item {
+    border: 1px solid rgba(0, 0, 0, .4);
+    border-radius: 8px;
+    flex: 0 0 calc(100% / 3 - 20px);
+    margin: 0 10px 20px;
+    overflow: hidden;
+}
+
+.thumb {
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.info {
+    padding: 16px 16px 10px;
+}
+
+.info .title {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.info .bottom {
+    font-size: 0.85em;
+}
